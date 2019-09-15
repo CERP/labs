@@ -92,6 +92,8 @@ html, body {
 		flex-direction: row;
 		width: 100%;
 		flex: 1;
+		font-family: sans-serif;
+		font-size: 1.5rem;
 	}
 
 	.panel .bottom div {
@@ -100,7 +102,13 @@ html, body {
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 	}
+
+	.panel .bottom .segment {
+		text-align: center;
+	}
+
 
 
 .cerp {
