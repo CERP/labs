@@ -64,6 +64,7 @@ html, body {
 	align-items: center;
 	padding: 20px;
 	padding-bottom: 0;
+	margin: auto;
 }
 	.panel.mini {
 		min-height: initial;
@@ -89,14 +90,14 @@ html, body {
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			margin: 10px;
+			margin: 0 10px;
 		}
 
 		.panel .bottom .img {
 			background-size: cover;
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
-			min-height: 50vw;
+			min-height: 50vh;
 		}
 
 		.panel .bottom .segment {
@@ -106,6 +107,10 @@ html, body {
 			justify-content: center;
 			text-align: center;
 			padding: 20px 0;
+		}
+
+		.panel .bottom .segment:first-child {
+			padding-top: 0;
 		}
 
 .main.panel {
@@ -191,7 +196,11 @@ html, body {
 	border-radius: 12px;
 	flex: 0;
 	padding: 20px;
+	margin-bottom: 20px;
 }
+	.panel .bottom .profile:last-child {
+		margin-bottom: 0;
+	}
 	.panel .bottom .profile .profile-img {
 		height: 200px;
 		width: 200px;
@@ -264,6 +273,10 @@ html, body {
 		font-size: 2rem;
 	}
 
+	.panel:not(.main) {
+		max-width: 90%;
+	}
+
 	.panel .bottom {
 		flex-direction: column;
 	}
@@ -275,4 +288,12 @@ html, body {
 		.panel .bottom .right .label.segment  {
 			padding-top: 20px;
 		}
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+	.panel:not(.main) {
+		max-width: 75%;
+	}
 }
