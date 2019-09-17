@@ -79,6 +79,11 @@ html, body {
 		color: var(--grey);
 	}
 
+	.panel .bottom.horizontal {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
 		.panel .bottom>div {
 			flex: 1;
 			display: flex;
@@ -181,9 +186,11 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	border: 2px solid var(--grey);
 	border-radius: 12px;
+	flex: 0;
+	padding: 20px;
 }
 	.panel .bottom .profile .profile-img {
 		height: 200px;
@@ -247,6 +254,8 @@ html, body {
 		text-align: center;
 		align-items: center;
 		justify-content: center;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.main .subtitle {
