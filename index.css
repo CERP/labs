@@ -198,9 +198,6 @@ html, body {
 	padding: 20px;
 	margin-bottom: 20px;
 }
-	.panel .bottom .profile:last-child {
-		margin-bottom: 0;
-	}
 	.panel .bottom .profile .profile-img {
 		height: 200px;
 		width: 200px;
@@ -285,8 +282,9 @@ html, body {
 			padding-bottom: 0;
 		}
 
-		.panel .bottom .right .label.segment  {
+		.panel .bottom .label.segment  {
 			padding-top: 20px;
+			padding-bottom: 0;
 		}
 
 }
