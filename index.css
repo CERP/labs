@@ -1,11 +1,11 @@
 :root {
-	--blue: rgb(52, 74, 98);
-	--grey: rgb(103, 103, 103);
+	--blue: #334960;
+	--grey: #676767;
 	--light-green: rgb(217, 238, 221);
 	--mid-green: rgb(179, 219, 192);
 	--green: rgb(132, 184, 162);
-	--dark-green: rgb(104, 146, 144);
-	--orange: rgb(239, 193, 116);
+	--dark-green: #689290;
+	--orange: #efc174;
 	--light-orange: rgb(249, 222, 119);
 	--green3: rgb(237, 237, 175);
 	--icon: rgb(40, 196, 248);
@@ -54,6 +54,7 @@ html, body {
 .body {
 	height: calc(100% - 80px);
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .panel {
@@ -63,7 +64,6 @@ html, body {
 	min-height: 60vh;
 	align-items: center;
 	padding: 20px;
-	padding-bottom: 0;
 	margin: auto;
 }
 
@@ -99,10 +99,10 @@ html, body {
 		}
 
 		.panel .bottom .img {
-			background-size: cover;
+			background-size: contain;
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
-			min-height: 50vh;
+			min-height: 30vh;
 		}
 
 		.panel .bottom .txt {
@@ -184,11 +184,9 @@ html, body {
 
 	.mischool a {
 		color: #fc6171;
-		text-decoration: none;
 	}
 
 	.platform a {
-		text-decoration: none;
 		color: #74aced;
 	}
 
