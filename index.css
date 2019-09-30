@@ -37,11 +37,30 @@ html, body {
 	font-size: 2rem;
 	color: var(--orange);
 	border-bottom: 1px solid var(--blue);
+	color: rgba(0, 0, 0, 0)!important;
 }
 	.header .cerp {
 		border-right: 1px solid var(--grey);
 		padding-right: .5rem;
 		margin-right: .5rem;
+	}
+
+	.logo {
+		background-size: contain;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+
+	.header-logo {
+		height: 47px;
+		width: 209px;
+		background-image: url('/public/labs-grey-oswald.png');
+	}
+
+	.main-logo {
+		width: 401px;
+		height: 198px;
+		background-image: url('/public/labs-white-oswald.png');
 	}
 
 .footer {
@@ -152,8 +171,9 @@ html, body {
 	}
 
 
+
 	.main .subtitle {
-		margin-left: 14.7rem;
+		margin-left: 16.7rem;
 		font-size: 2.5rem;
 	}
 
@@ -168,9 +188,15 @@ html, body {
 	}
 
 .cerp {
-	border-right: 4px solid var(--grey);
+	border-right: 1px solid var(--grey);
 	color: var(--grey);
 	font-weight: 500;
+	/*
+	background-image: url('/public/cerp-grey.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	/*color: rgba(0, 0, 0, 0)!important;*/
 }
 
 .labs {
