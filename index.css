@@ -40,10 +40,19 @@ body {
 	border-bottom: 1px solid var(--blue);
 	color: rgba(0, 0, 0, 0) !important;
 }
+
 .header .cerp {
 	border-right: 1px solid var(--grey);
 	padding-right: 0.5rem;
 	margin-right: 0.5rem;
+}
+
+.header .right {
+	margin-left: auto;
+}
+
+.header .contact {
+	color: var(--grey);
 }
 
 .logo {
@@ -101,9 +110,14 @@ body {
 	flex-direction: row;
 	width: 100%;
 	flex: 1;
+	align-items: center;
 	font-family: sans-serif;
 	font-size: 1.5rem;
 	color: var(--grey);
+}
+
+.panel.team .bottom {
+	align-items: initial;
 }
 
 .panel .bottom.horizontal {
@@ -124,6 +138,7 @@ body {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	min-height: 30vh;
+	max-height: 50vh;
 }
 
 .panel .bottom .txt {
@@ -144,8 +159,16 @@ body {
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center;
+	text-align: left;
 	padding: 20px 0;
+}
+
+.right .segment {
+	margin-left: 10%;
+}
+
+.left .segment {
+	margin-right: 10%;
 }
 
 .panel .bottom .segment:first-child {
@@ -347,10 +370,28 @@ body {
 		font-size: 3rem;
 		order: 2;
 	}
+
 	.panel .bottom .right.txt {
 		text-align: left;
 		padding-left: 5px;
 		padding-right: 20px;
+	}
+
+	.panel .bottom .img {
+		order: 1;
+		width: 100%;
+	}
+
+	.panel .bottom :not(.img) {
+		order: 2;
+	}
+
+	.right .segment {
+		margin-left: initial;
+	}
+
+	.left .segment {
+		margin-right: initial;
 	}
 }
 
