@@ -64,14 +64,14 @@ body {
 .header-logo {
 	height: 47px;
 	width: 209px;
-	background-image: url("/public/labs-grey-oswald.png");
+	background-image: url('/public/labs-grey-oswald.png');
 }
 
 .main-logo {
 	width: 401px;
 	max-width: 75%;
 	height: 198px;
-	background-image: url("/public/labs-white-oswald.png");
+	background-image: url('/public/labs-white-oswald.png');
 }
 
 .footer {
@@ -286,8 +286,9 @@ body {
 }
 
 .panel .bottom .profile .profile-name {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-bottom: 0;
+	font-weight: 600;
 }
 
 .panel .bottom .profile .profile-title {
