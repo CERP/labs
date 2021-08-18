@@ -7,8 +7,19 @@
 		"start": "snowpack dev",
 		"build": "snowpack build"
 	},
-	"author": "Taimur Shah",
+	"author": "CERP Labs",
 	"license": "ISC",
+	"prettier": {
+		"singleQuote": true,
+		"semi": false,
+		"printWidth": 100,
+		"jsxBracketSameLine": true,
+		"bracketSpacing": true,
+		"arrowParens": "avoid",
+		"trailingComma": "none",
+		"useTabs": true,
+		"tabWidth": 4
+	},
 	"devDependencies": {
 		"@snowpack/plugin-webpack": "^2.0.6",
 		"parcel-bundler": "^1.12.4",
